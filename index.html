@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    
+
+    <title>Isengard APP</title>
+  </head>
+  <body>
+    <header class="bg-dark bg-gradient text-center container-fluid">
+        <nav class="row">
+            <div class="col-12 col-md-6 col-lg-12">
+                <img src="img/logo.png" class="w-25 pt-5" alt="">
+                <h3 class="text-light">Isengard - Generador de Tropas</h3>
+            </div>
+            <div class="col-12 col-md-6 col-lg-12 pt-4">
+              
+            </div>
+        </nav>
+
+    </header>
+    <main class="container-fluid pt-3 bg-secondary text-light">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-5 mb-3">
+          
+          <div class="card">
+            <div class="card-header bg-dark bg-gradient">
+              <span><b>Creacion de Tropa</b></span>
+            </div>
+            <div class="card-body bg-secondary">
+              <div class="mb-3">
+                <label for="warr-name" class="form-label"><b>Nombre</b> </label>
+                <input class="form-control" id="warr-name">
+              </div>
+
+              <div class="mb-3">
+                <label for="war-type"><b>Tipo</b></label>
+                <select class="form-select" id="warr-type">
+                  <option value="orc">Orco</option>
+                  <option value="uruk">Uruk</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="warr-lvl"><b>Nivel</b></label>
+                <input type="number" class="form-control" id="warr-level">
+              </div>
+
+              <div class="mb-3">
+                <label for="warr-rank"><b>Rango</b></label>
+                <select class="form-select" id="warr-rank">
+                  <option value="warrior">Guerrero</option>
+                  <option value="captian">Capitan</option>
+                  <option value="warchief">Jefe de Guerra</option>
+                  <option value="sauronhand">Mano de Sauron</option>
+                </select>
+
+              </div>
+            </div>
+            <div class="card-footer bg-dark bg-gradient text-end">
+              <button type="button" class="btn btn-danger" id="btn-create">Crear</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="col col-md col-lg mb-4">
+          <img src="img/making_orcs.gif" class="container-fluid border-dark" alt="">
+        
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-12 pt-2 mb-3">
+          <div class="card">
+            <div class="card-header bg-dark bg-gradient">
+              <span><b>Tropas</b></span>
+            </div>
+            <div class="card-body bg-secondary">
+              <table class="table table-dark table-hover text-center">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Tipo</th>
+                    <th>Lvl</th>
+                    <th>Rango</th>
+                    <th>Acciones</th>
+                  </tr>
+                </thead>
+                <tbody id="tabla-tbody">
+
+
+                </tbody>
+              </table>
+            </div>
+
+
+          </div>
+        
+        </div>
+      
+
+      </div>
+    </main>
+
+    <footer >
+      <div class="row bg-dark bg-gradient text-light text-center">
+        <div class="col-12 col-md-12 col-lg-12">
+          <iframe src="audio/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+          <audio id="player" controls autoplay loop>
+            <source src="audio/music.mp3" type="audio/mp3">
+          </audio>
+        </div>
+        <div class="col-12 col-md-12 col-lg-12">
+          <span>Creado por Benjamin Moraga R.</span>
+        </div>
+    </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
