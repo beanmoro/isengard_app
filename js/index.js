@@ -83,7 +83,7 @@ const reloadTable = ()=>{
         tdActions.classList.add("text-center");
         let button = document.createElement("button");
         button.classList.add("btn","btn-danger")
-        button.innerText = "Dar de bajar"
+        button.innerText = "Dar de baja"
         button.nro = i;
         button.addEventListener("click", dischargeTroop);
         tdActions.appendChild(button);
